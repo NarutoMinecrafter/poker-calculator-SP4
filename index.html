@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="Калькулятор для покера на #СП4" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="СП, СП4, Покер, Калькулятор, #СП, #СП4, Пятёрка, Naruto Minecrafter" />
+        <meta name="author" content="Naruto Minecrafter" />
+        <title>Калькулятор для покера на #СП4</title>
+        <style>
+        
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                height: 100%;
+            }
+
+            body {
+                background-color: grey;
+                height: 100%;
+            }
+
+            header, footer {
+                background-color:rgb(83, 76, 76);
+                width: 100%-10px;
+                min-height: 50px;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+
+            .page_wrap {
+                min-height: 89.1%;
+
+            }
+
+            header {
+                margin-bottom: 10px;
+            }
+
+            footer {
+                bottom: 0;
+                margin-top: 20px;
+            }
+
+            .hed-size {
+                display: block;
+                border: 2px solid grey;
+                width: 200px;
+                margin-top: 5px;
+                font: 1.5em sans-serif;
+                font-family: comic sans ms, sans-serif;
+                border-radius: 20px;
+                background-color:silver;
+                color: rgb(37, 37, 37);
+            }
+
+            summary {
+                display: inline;
+                max-width: 100%;
+                font: 1.4em sans-serif;
+                font-family: comic sans ms, sans-serif;
+            }
+
+            details {
+                font: 1em sans-serif;
+                color: rgb(20, 20, 20);
+            }
+
+            .calc {
+                margin-top: 20px;
+                max-width: 100%;
+                width: 350px;
+                height: 530px;
+                border: 5px solid black;
+                border-radius: 15px;
+                background-color: silver;
+
+            }
+
+            .vvod {
+                width: 70%;
+                height: 35px;
+                margin-top: 5px;
+                border-radius: 5px;
+                background-color: snow;
+                font: 1.2em sans-serif;
+            }
+
+            .x3, .x23 {
+                margin-top: 10px;
+                width: 70px;
+                height: 25px;
+                color: rgb(0, 5, 70);
+                background-color: rgba(0, 255, 34, 0.521);
+                border: 2px solid black;
+                border-radius: 3px;
+            }
+
+            .x3 {
+                margin-right: 30px ;
+            }
+
+            .x23 {
+                margin-left: 30px ;
+            }
+
+            .rez {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 70%;
+                min-height: 60px;
+                border: 4px solid gray;
+                border-radius: 5px;
+                background-color: snow;
+            }
+
+            .rez, h6 {
+                color: rgb(32, 32, 32);
+            }
+
+            .popa {
+                width: 90%;
+                border: 5px solid red;
+                border-radius: 10px;
+
+            }
+
+            .rezp {
+                border: 0;
+                color: rgb(37, 37, 37);
+                font-size: 1.2em;
+                background-color: snow;
+                width: 80%;
+            }
+
+            .numbers {
+                width: 80%;
+                height: 25%;
+                margin-bottom: 10px;
+                border: 4px solid rgb(0, 0, 53);
+                border-radius: 15px;
+            }
+
+            .Naruto {
+                display: block;
+                border: 2px solid orangered;
+                width: 220px;
+                margin-top: 5px;
+                font: 1.33em sans-serif;
+                font-family: comic sans ms, sans-serif;
+                border-radius: 10px;
+                background-color:rgba(255, 208, 0, 0.884);
+                color: red;
+            }
+
+            .popka {
+                float: right;
+            }
+
+            a {
+                text-decoration: none;
+                transition: all.6s ease;
+                -moz-transition: all.6s ease;
+                -webkit-transition: all.6s ease;
+                -ms-transition: all.6s ease;
+                color: rgb(27, 61, 126);
+            }
+
+            a:visited {
+                color: rgb(163, 81, 14);
+            }
+
+            a:hover{
+                color: rgb(16, 116, 38);
+            }
+
+            a:active {
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="page_wrap">
+            <header>
+                <center><div class="hed-size" >Калькулятор</div></center>
+            </header>
+            <center>
+                <details>
+                   <summary>Как работает? + О создателе.</summary>
+                   Введите ваше количество пороха в первое поле, нажмите на нужный вам коефициэнт. В поле "Результат" в получите результат вычесления. Снацала стаки потом остаток пороха 
+                   </p>(Цыферки чисто для вида, функционала не имеют)</p> <br>
+                   <span>Cоздатель:</span> <br>
+                   Автор сайта - <a href="https://vk.com/narutominecrafter">Naruto Minechfter</a>
+                   <br>
+                   Сайт сделан за основой сайта <a href="http://spcalc.000webhostapp.com/">Tommy4chan</a>
+                </details>
+             </center>
+             <center>
+                <div class="calc">
+                    <input type="number" class="vvod" placeholder="Введите ставку пираха..." id="txt" required="">
+                    <br>
+                    <input type="submit" id="x3" value="x3" class="x3">
+                    <input type="submit" id="x23" value="x23" class="x23">
+                    <div class="rez" title="Результат">
+                        <h3>Результат:</h3>
+                        <center><input type="text" name="rez" id="result" class="rezp" disabled>
+                    </div>
+                    <img src="https://lepszaoferta.pl/wp-content/uploads/2015/06/numerykonta.png" class="numbers" alt="Цыферки" title="Чиста для вида">
+                    <img src="https://i.ytimg.com/vi/EhtB5rmOoK0/maxresdefault.jpg" alt="Питорка реальна" title="Жировая складка" class="popa">
+             </center>
+                 </div>
+            <script>
+                function simple(){
+                    var x, s,k1,k2,os;
+                    x=document.getElementById("txt").value;
+                    os = x*3;
+                    s = x*3;
+                    k2 = s % 64;
+                    s=s-k2;
+                    k1 = s/64;
+                    document.getElementById("result").value = k1 + "с " + k2 + "п ( или " + os +"п)";
+
+                }
+                function more(){
+                    var x, s,k1,k2,os;
+                    x=document.getElementById("txt").value;
+                    os = x*23;
+                    s = x*23;
+                    k2 = s % 64;
+                    s=s-k2;
+                    k1 = s/64;
+                    document.getElementById("result").value = k1 + "с " + k2 + "п ( или " + os +"п)";
+
+                }
+                document.getElementById("x3").onclick = simple;
+                document.getElementById("x23").onclick = more;
+            </script>   
+            
+        </div>
+        <footer>
+            
+            <center><div class="Naruto">Naruto Minecrafter</div></center>
+            <span>Все права защищены &copy; 2020</span>
+            <span class="popka">5opka</span>
+        </footer >
+    </body>
+</html>
